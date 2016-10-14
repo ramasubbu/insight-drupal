@@ -1,0 +1,34 @@
+{# t07-404-page.twig #}
+{% extends 'includes/1_core/layout.twig' %}
+
+{% block page %}
+
+{% if pageHero %}
+  {% include 'includes/3_components/c-page-hero.twig' %}
+{% endif %}
+<main class="wp-content">
+  <section class="wrapper">
+    <h3>Sorry, but the page you were trying to view does not exist.</h3>
+    <p>Impedit eius natus unde hic quia doloremque voluptas esse facere tenetur sunt ea iure deleniti sapiente porro quam officia, laborum architecto nulla.</p>
+    <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>It looks like this was the result of either:</p>
+
+    <ul>
+      <li>a mistyped address</li>
+      <li>an out-of-date link</li>
+    </ul>
+
+    <div class="search-bar">
+      <form class="search-bar__inner wrapper" role="search" method="get" action="http://athena.genuinedev2.com/">
+        <label class="visuallyhidden" for="q">Search</label>
+        <input type="text" placeholder="Search..." class="search-bar__input" id="q" name="s" value="">
+        <input type="submit" class="visuallyhidden button" value="Search">
+      </form>
+    </div>
+  </section>
+</main>
+{% if pageCTA %}
+  {% include 'includes/3_components/c-page-cta.twig' %}
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,8 @@
+theme:
+  js:
+    scripts/libs/modernizr.js: {}
+    scripts/app.built.js: {}
+    scripts/fontloader.built.js: {}
+  css:
+    theme:
+      styles/screen.css: {}

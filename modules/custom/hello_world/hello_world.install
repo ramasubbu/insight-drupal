@@ -1,0 +1,6 @@
+<?php
+use function Drupal\Core\Form\drupal_set_message;
+
+function hello_world_update_8210(&$sandbox) {
+  drupal_set_message("Example");
+}

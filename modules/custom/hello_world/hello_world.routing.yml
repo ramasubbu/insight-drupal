@@ -1,8 +1,11 @@
 
-hello_world.default_controller_hello:
-  path: '/hello_world/hello/{name}'
+hello_world.hello_world_form:
+  path: '/admin/config/hello_world/helloworld'
   defaults:
-    _controller: '\Drupal\hello_world\Controller\DefaultController::hello'
-    _title: 'Hello world'
+    _form: '\Drupal\hello_world\Form\HelloWorldForm'
+    _title: 'HelloWorldForm'
   requirements:
-    _permission: 'access content'
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

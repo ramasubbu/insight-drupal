@@ -1,0 +1,42 @@
+# core: 8.x
+type: theme
+base theme: false
+
+name: 'Athena Insight'
+description: 'Theme for Athena Insight'
+package: 'Athena Health Technology'
+
+regions:
+  page_top_region: 'Page top region'
+  header: 'Header'
+  search: 'Search'
+  header_banner: 'Header Banner'
+  featured: 'Featured'
+  content: 'Content'
+  category_left_menu: 'Category Left Menu'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer_first_bar: 'Footer First Bar'
+  footer_firstcolumn: 'Footer first column'
+  footer_secondcolumn: 'Footer second column'
+  footer_thirdcolumn: 'Footer third column'
+  footer_fourthcolumn: 'Footer fourth column'
+  footer_last_bar: 'Footer Last Bar'
+  footer: 'Footer'
+
+libraries:
+  - 'atheinsight/theme'
+
+# The following are dynamic library overrides based on certain critera,
+# usually a theme setting.
+#
+# @see \Drupal\bootstrap\Plugin\Alter\LibraryInfo::alter()
+#
+#  core/drupal.dialog: bootstrap/drupal.dialog
+#  core/drupal.dialog.ajax: bootstrap/drupal.dialog.ajax
+
+# Information added by Drupal.org packaging script on 2016-08-03
+version: '8.x-3.0-rc2'
+core: '8.x'
+project: 'AthenaHealthTech'
+datestamp: 1470203963
