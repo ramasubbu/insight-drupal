@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if bodyClass != 'home' %}{{title}} | {% endif %}athenaInsight</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <script>
+    // If fonts are cached, skip FFO.
+    if (sessionStorage.fontsLoaded === 'true') {document.documentElement.className += ' fonts-loaded';}
+  </script>
+
+  <link rel="stylesheet" href="/styles/screen.css">
+
+  <meta property="og:title" content="{{ og.title }}"/>
+  <meta property="og:image" content="{{ og.image }}"/>
+  <meta property="og:site_name" content="{{ og.site_name }}"/>
+  <meta property="og:description" content="{{ og.description }}"/>
+  <meta property="fb:app_id" content="{{ fb.app_id }}"/>
+
+  <meta name="twitter:card" content="{{ twitter.card }}" />
+  <meta name="twitter:site" content="{{ twitter.site }}" />
+  <meta name="twitter:creator" content="{{ twitter.creator }}" />
+  <meta name="twitter:title" content="{{ twitter.title }}" />
+  <meta name="twitter:description" content="{{ twitter.description }}" />
+  <meta name="twitter:image" content="{{ twitter.image }}" />
+
+  <script src="/scripts/libs/modernizr.js"></script>
+
+  <!-- Eloqua tracking scripts -->
+  <script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '1227305179']);
+    _elqQ.push(['elqTrackPageView']);
+    (function () {
+      function async_load() {
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = '//img03.en25.com/i/elqCfg.min.js';
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      }
+      if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+      else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })();
+  </script>
+
+</head>
