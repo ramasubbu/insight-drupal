@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello_world
+  theme:
+    - atheinsight
+id: helloworld
+theme: atheinsight
+region: content
+weight: 0
+provider: null
+plugin: hello_world
+settings:
+  id: hello_world
+  label: 'Hello world'
+  provider: hello_world
+  label_display: visible
+visibility: {  }
