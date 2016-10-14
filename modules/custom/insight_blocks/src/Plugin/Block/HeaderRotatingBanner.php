@@ -23,5 +23,4 @@ class HeaderRotatingBanner extends BlockBase {
 
     return $build;
   }
-
 }

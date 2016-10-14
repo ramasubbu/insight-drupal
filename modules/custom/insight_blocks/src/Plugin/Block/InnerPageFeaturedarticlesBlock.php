@@ -23,5 +23,4 @@ class InnerPageFeaturedarticlesBlock extends BlockBase {
 
     return $build;
   }
-
 }
