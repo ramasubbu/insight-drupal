@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - features_test
+  theme:
+    - atheinsight
+id: features_test
+theme: atheinsight
+region: featured
+weight: 0
+provider: null
+plugin: features_test
+settings:
+  id: features_test
+  label: features_test
+  provider: features_test
+  label_display: visible
+visibility: {  }
