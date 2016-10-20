@@ -1,7 +1,0 @@
-hello_world.hello_world_form:
-  title: 'HelloWorldForm'
-  route_name: hello_world.hello_world_form
-  description: 'A description for the menu entry'
-  parent: system.admin_config_system
-  weight: 99
-

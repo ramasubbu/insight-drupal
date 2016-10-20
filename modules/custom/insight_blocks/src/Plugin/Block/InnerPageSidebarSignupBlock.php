@@ -23,5 +23,4 @@ class InnerPageSidebarSignupBlock extends BlockBase {
 
     return $build;
   }
-
 }

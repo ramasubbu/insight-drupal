@@ -23,5 +23,4 @@ class InnerPagerefererarticlesBlock extends BlockBase {
 
     return $build;
   }
-
 }
