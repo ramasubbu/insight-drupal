@@ -3,6 +3,10 @@
 namespace Drupal\insight_blocks\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Entity\Sql\SqlContentEntityStorage;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\taxonomy\TermStorage;
+use Drupal\Core\Url;
 
 /**
  * Provides a 'CategoryLeftMenu' block.
@@ -25,7 +29,7 @@ class CategoryLeftMenu extends BlockBase {
   
   public function getCategoryLeftMenu() {
   	global $base_path;
-	$terms = \Drupal\taxonomy\TermStorage::loadTree('category', 0);
+	$terms = \Drupal\taxonomy\TermStorage::loadTree('category');
   	echo "sadfsa";
   	echo "<pre>"; print_r($terms); exit;
   	$output = '<nav class="primary-navigation" role="navigation">
