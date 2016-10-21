@@ -54,7 +54,7 @@
   </div>
 </div>
 
-<section class="page-hero page-hero--big" style="background-image: url(/images/home-hero.jpg)">
+<section class="page-hero page-hero--big" style="background-image: url(themes/insight/images/home-hero.jpg)">
   {{page.header_banner}}
 </section>
   <main>
@@ -70,59 +70,30 @@
     </section>
 
     <section class="wrapper">
-      <div class="email-signup email-signup--cta-full" data-module="emailSignUp">
-        <div class="wrapper row">
-          <div class="span-1of1 span-1of3@desktop">
-            <h3>Stay in the know</h3>
-          </div>
-          <div class="span-1of1 span-1of2@desktop">
-            <p class="email-signup--description">Sign up for weekly data and news from athenaInsight.</p>
-            <form action="https://s1227305179.t.eloqua.com/e/f2" method="post" data-module="formValidation">
-              <div class="form-group email">
-
-                <label for="CTAemailSignup" class="visuallyhidden">Your Email</label>
-
-                
-<input type="email" name="emailAddress" placeholder="Your Email" id="CTAemailSignup" required />
-                
-<input type="hidden" name="elqFormName" value="athenainsightnews" />
-                
-<input type="hidden" name="elqSiteID" value="1227305179" />
-                
-  <input type="submit" class=" button" value="Sign Up" />
-
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+      {{page.signupcta}}
     </section>
 
-    <section class="interactive wrapper">
+  <!--  <section class="interactive wrapper">
   <div class="interactive__content wrapper">
     <div class="span-8@tablet">
       
-<section class="ceros-iframe">
-{{page.footer_first_bar}}
-</section>
     </div>
     
   </div>
+</section> -->
+
+<section class="ceros-iframe">
+{{page.footer_first_bar}}
 </section>
 
-  </main>
-
-  <div id="manifesto" style="display:none;" data-module="manifesto">
-    <div class="wrapper text-center">
-      <h1 class="page-hero__title"><span class="thin">Today's data.</span> tomorrow's healthcare.</h1>
-      <p><em>athenaInsight</em> is a daily news hub from the heart of the health care internet. Come here for surprising data, performance strategies, and sparks of inspiration to make healthcare work as it should – all powered by data from athenahealth’s national network.
-      </p>
-      <a role="button" href="https://www.youtube.com/embed/PN5mWoZX6Nw?rel=0" class="button page-hero__button" id="learnMore" aria-label="Learn More" target="_blank">Learn More</a>
-      <a role="button" href="#" class="button page-hero__button" id="startExploring" aria-label="Start Exploring">Start Exploring</a>
-    </div>
+<section class="wrapper wrapper-full">
+  <div class="interactive__content ceros-wrapper embed-container" data-module="ceros"
+    id="5797be051ef94" style="padding-bottom: 56.2%">
+    <iframe allowfullscreen="" src="https://view.ceros.com/athena-health/single-page-experience" class="ceros-experience" frameborder="0"></iframe>
   </div>
-
-
+</section>
+  </main>
+  {{page.manifesto}}
 
 <footer class="global-footer">
   <section class="wrapper">
@@ -137,23 +108,20 @@
     </div>
   </section>
   <section class="wrapper">
-    {{page.footer_last_bar}}
-  </section>
-  <section class="wrapper">
     {{page.footer}}
   </section>
 </footer>
 
 <script type='text/javascript'>
 /* <![CDATA[ */
-var ath_quiz_vars = {"ajaxurl":"http:\/\/athena.genuinedev2.com\/wp-admin\/admin-ajax.php","qnonce":"12c6caf454"};
-var ath_load_more_vars = {"ajaxurl":"http:\/\/athena.genuinedev2.com\/wp-admin\/admin-ajax.php","nonce":"8f49a9b5ea","query_vars":"YTo2NDp7czo0OiJwYWdlIjtpOjA7czo4OiJwYWdlbmFtZSI7czoxMToiYWxsLXN0b3JpZXMiO3M6NToiZXJyb3IiO3M6MDoiIjtzOjE6Im0iO3M6MDoiIjtzOjE6InAiO2k6MDtzOjExOiJwb3N0X3BhcmVudCI7czowOiIiO3M6Nzoic3VicG9zdCI7czowOiIiO3M6MTA6InN1YnBvc3RfaWQiO3M6MDoiIjtzOjEwOiJhdHRhY2htZW50IjtzOjA6IiI7czoxMzoiYXR0YWNobWVudF9pZCI7aTowO3M6NDoibmFtZSI7czowOiIiO3M6Njoic3RhdGljIjtzOjA6IiI7czo3OiJwYWdlX2lkIjtpOjA7czo2OiJzZWNvbmQiO3M6MDoiIjtzOjY6Im1pbnV0ZSI7czowOiIiO3M6NDoiaG91ciI7czowOiIiO3M6MzoiZGF5IjtpOjA7czo4OiJtb250aG51bSI7aTowO3M6NDoieWVhciI7aTowO3M6MToidyI7aTowO3M6MTM6ImNhdGVnb3J5X25hbWUiO3M6MDoiIjtzOjM6InRhZyI7czowOiIiO3M6MzoiY2F0IjtzOjA6IiI7czo2OiJ0YWdfaWQiO3M6MDoiIjtzOjY6ImF1dGhvciI7czowOiIiO3M6MTE6ImF1dGhvcl9uYW1lIjtzOjA6IiI7czo0OiJmZWVkIjtzOjA6IiI7czoyOiJ0YiI7czowOiIiO3M6NToicGFnZWQiO2k6MDtzOjg6Im1ldGFfa2V5IjtzOjA6IiI7czoxMDoibWV0YV92YWx1ZSI7czowOiIiO3M6NzoicHJldmlldyI7czowOiIiO3M6MToicyI7czowOiIiO3M6ODoic2VudGVuY2UiO3M6MDoiIjtzOjU6InRpdGxlIjtzOjA6IiI7czo2OiJmaWVsZHMiO3M6MDoiIjtzOjEwOiJtZW51X29yZGVyIjtzOjA6IiI7czo1OiJlbWJlZCI7czowOiIiO3M6MTI6ImNhdGVnb3J5X19pbiI7YTowOnt9czoxNjoiY2F0ZWdvcnlfX25vdF9pbiI7YTowOnt9czoxMzoiY2F0ZWdvcnlfX2FuZCI7YTowOnt9czo4OiJwb3N0X19pbiI7YTowOnt9czoxMjoicG9zdF9fbm90X2luIjthOjA6e31zOjEzOiJwb3N0X25hbWVfX2luIjthOjA6e31zOjc6InRhZ19faW4iO2E6MDp7fXM6MTE6InRhZ19fbm90X2luIjthOjA6e31zOjg6InRhZ19fYW5kIjthOjA6e31zOjEyOiJ0YWdfc2x1Z19faW4iO2E6MDp7fXM6MTM6InRhZ19zbHVnX19hbmQiO2E6MDp7fXM6MTU6InBvc3RfcGFyZW50X19pbiI7YTowOnt9czoxOToicG9zdF9wYXJlbnRfX25vdF9pbiI7YTowOnt9czoxMDoiYXV0aG9yX19pbiI7YTowOnt9czoxNDoiYXV0aG9yX19ub3RfaW4iO2E6MDp7fXM6MTk6Imlnbm9yZV9zdGlja3lfcG9zdHMiO2I6MDtzOjE2OiJzdXBwcmVzc19maWx0ZXJzIjtiOjA7czoxMzoiY2FjaGVfcmVzdWx0cyI7YjoxO3M6MjI6InVwZGF0ZV9wb3N0X3Rlcm1fY2FjaGUiO2I6MTtzOjIyOiJ1cGRhdGVfcG9zdF9tZXRhX2NhY2hlIjtiOjE7czo5OiJwb3N0X3R5cGUiO3M6MDoiIjtzOjE0OiJwb3N0c19wZXJfcGFnZSI7aToxMjtzOjg6Im5vcGFnaW5nIjtiOjA7czoxNzoiY29tbWVudHNfcGVyX3BhZ2UiO3M6MjoiNTAiO3M6MTM6Im5vX2ZvdW5kX3Jvd3MiO2I6MDtzOjU6Im9yZGVyIjtzOjQ6IkRFU0MiO30=","max_num_pages":"4"};
+var ath_quiz_vars = {"ajaxurl":"https:\/\/insight.athenahealth.com\/wp-admin\/admin-ajax.php","qnonce":"12c6caf454"};
+var ath_load_more_vars = {"ajaxurl":"https:\/\/insight.athenahealth.com\/wp-admin\/admin-ajax.php","nonce":"8f49a9b5ea","query_vars":"YTo2NDp7czo0OiJwYWdlIjtpOjA7czo4OiJwYWdlbmFtZSI7czoxMToiYWxsLXN0b3JpZXMiO3M6NToiZXJyb3IiO3M6MDoiIjtzOjE6Im0iO3M6MDoiIjtzOjE6InAiO2k6MDtzOjExOiJwb3N0X3BhcmVudCI7czowOiIiO3M6Nzoic3VicG9zdCI7czowOiIiO3M6MTA6InN1YnBvc3RfaWQiO3M6MDoiIjtzOjEwOiJhdHRhY2htZW50IjtzOjA6IiI7czoxMzoiYXR0YWNobWVudF9pZCI7aTowO3M6NDoibmFtZSI7czowOiIiO3M6Njoic3RhdGljIjtzOjA6IiI7czo3OiJwYWdlX2lkIjtpOjA7czo2OiJzZWNvbmQiO3M6MDoiIjtzOjY6Im1pbnV0ZSI7czowOiIiO3M6NDoiaG91ciI7czowOiIiO3M6MzoiZGF5IjtpOjA7czo4OiJtb250aG51bSI7aTowO3M6NDoieWVhciI7aTowO3M6MToidyI7aTowO3M6MTM6ImNhdGVnb3J5X25hbWUiO3M6MDoiIjtzOjM6InRhZyI7czowOiIiO3M6MzoiY2F0IjtzOjA6IiI7czo2OiJ0YWdfaWQiO3M6MDoiIjtzOjY6ImF1dGhvciI7czowOiIiO3M6MTE6ImF1dGhvcl9uYW1lIjtzOjA6IiI7czo0OiJmZWVkIjtzOjA6IiI7czoyOiJ0YiI7czowOiIiO3M6NToicGFnZWQiO2k6MDtzOjg6Im1ldGFfa2V5IjtzOjA6IiI7czoxMDoibWV0YV92YWx1ZSI7czowOiIiO3M6NzoicHJldmlldyI7czowOiIiO3M6MToicyI7czowOiIiO3M6ODoic2VudGVuY2UiO3M6MDoiIjtzOjU6InRpdGxlIjtzOjA6IiI7czo2OiJmaWVsZHMiO3M6MDoiIjtzOjEwOiJtZW51X29yZGVyIjtzOjA6IiI7czo1OiJlbWJlZCI7czowOiIiO3M6MTI6ImNhdGVnb3J5X19pbiI7YTowOnt9czoxNjoiY2F0ZWdvcnlfX25vdF9pbiI7YTowOnt9czoxMzoiY2F0ZWdvcnlfX2FuZCI7YTowOnt9czo4OiJwb3N0X19pbiI7YTowOnt9czoxMjoicG9zdF9fbm90X2luIjthOjA6e31zOjEzOiJwb3N0X25hbWVfX2luIjthOjA6e31zOjc6InRhZ19faW4iO2E6MDp7fXM6MTE6InRhZ19fbm90X2luIjthOjA6e31zOjg6InRhZ19fYW5kIjthOjA6e31zOjEyOiJ0YWdfc2x1Z19faW4iO2E6MDp7fXM6MTM6InRhZ19zbHVnX19hbmQiO2E6MDp7fXM6MTU6InBvc3RfcGFyZW50X19pbiI7YTowOnt9czoxOToicG9zdF9wYXJlbnRfX25vdF9pbiI7YTowOnt9czoxMDoiYXV0aG9yX19pbiI7YTowOnt9czoxNDoiYXV0aG9yX19ub3RfaW4iO2E6MDp7fXM6MTk6Imlnbm9yZV9zdGlja3lfcG9zdHMiO2I6MDtzOjE2OiJzdXBwcmVzc19maWx0ZXJzIjtiOjA7czoxMzoiY2FjaGVfcmVzdWx0cyI7YjoxO3M6MjI6InVwZGF0ZV9wb3N0X3Rlcm1fY2FjaGUiO2I6MTtzOjIyOiJ1cGRhdGVfcG9zdF9tZXRhX2NhY2hlIjtiOjE7czo5OiJwb3N0X3R5cGUiO3M6MDoiIjtzOjE0OiJwb3N0c19wZXJfcGFnZSI7aToxMjtzOjg6Im5vcGFnaW5nIjtiOjA7czoxNzoiY29tbWVudHNfcGVyX3BhZ2UiO3M6MjoiNTAiO3M6MTM6Im5vX2ZvdW5kX3Jvd3MiO2I6MDtzOjU6Im9yZGVyIjtzOjQ6IkRFU0MiO30=","max_num_pages":"4"};
 /* ]]> */
 </script>
 
 <!-- Global script includes -->
-<script src="scripts/app.built.js" async></script>
-<script src="scripts/fontloader.built.js" async></script>
+<script src="themes/insight/scripts/app.built.js" async></script>
+<script src="themes/insight/scripts/fontloader.built.js" async></script>
 
 </body>
 </html>

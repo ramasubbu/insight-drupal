@@ -22,7 +22,7 @@ class Application extends ConsoleApplication
     /**
      * @var string
      */
-    const VERSION = '1.0.0-rc5';
+    const VERSION = '1.0.0-rc6';
 
     public function __construct(ContainerInterface $container)
     {
@@ -36,6 +36,7 @@ class Application extends ConsoleApplication
     {
         $this->registerGenerators();
         $this->registerCommands();
+        $output->write(sprintf("\033\143"));
         parent::doRun($input, $output);
         if ($this->getCommandName($input) == 'list' && $this->container->hasParameter('console.warning')) {
             $io = new DrupalStyle($input, $output);

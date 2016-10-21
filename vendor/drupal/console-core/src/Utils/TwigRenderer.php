@@ -25,12 +25,12 @@ class TwigRenderer
     /**
      * TwigRenderer constructor.
      * @param $translator
-     * @param StringConverter  $stringConverter
+     * @param StringConverter $stringConverter
      */
     public function __construct(
         $translator,
         StringConverter $stringConverter
-    ){
+    ) {
         $this->translator = $translator;
         $this->stringConverter = $stringConverter;
     }
@@ -126,7 +126,7 @@ class TwigRenderer
             'servicesAsParametersKeys', function ($services) {
                 $returnValues = [];
                 foreach ($services as $service) {
-                    $returnValues[] = sprintf('"@%s"', $service['name']);
+                    $returnValues[] = sprintf('\'@%s\'', $service['name']);
                 }
 
                 return $returnValues;

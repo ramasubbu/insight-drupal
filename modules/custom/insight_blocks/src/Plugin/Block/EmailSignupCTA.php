@@ -19,9 +19,7 @@ class EmailSignupCTA extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['email_signup_cta']['#markup'] = 'Implement EmailSignupCTA.';
-
-    return $build;
+    $form = \Drupal::formBuilder()->getForm('Drupal\insight_blocks\Form\SignUpCTA');
+    return $form;
   }
-
 }

@@ -46,8 +46,6 @@ class ManifestoBlock extends BlockBase {
 	aria-label="Watch video" target="_blank">' . t( "Watch video" ) . '</a><a role="button" href="#" class="button page-hero__button"
 	 id="startExploring" aria-label="Start exploring">' . t( "Start exploring" ) . '</a>
 		</div></div>';
-	
 	  	return $output;
 	}
-
 }

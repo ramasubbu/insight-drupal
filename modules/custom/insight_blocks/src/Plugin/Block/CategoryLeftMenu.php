@@ -23,13 +23,36 @@ class CategoryLeftMenu extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['category_left_menu']['#markup'] = 'hi';//$this->getCategoryLeftMenu();
+    $build['category_left_menu']['#markup'] = '<nav class="primary-navigation" role="navigation">
+  <ul class="primary-navigation__list">
+      <li class="primary-navigation__list-item performance-insight">
+      <a class="primary-navigation__link" href="/category/performance-insight" >Performance Insight</a>
+    </li>
+      <li class="primary-navigation__list-item data-insight">
+      <a class="primary-navigation__link" href="/category/data-insight" >Data Insight</a>
+    </li>
+      <li class="primary-navigation__list-item leadership-insight">
+      <a class="primary-navigation__link" href="/category/leadership-insight" >Leadership Insight</a>
+    </li>
+      <li class="primary-navigation__list-item opinion">
+      <a class="primary-navigation__link" href="/category/opinion" >Opinion</a>
+    </li>
+      <li class="primary-navigation__list-item about-athena-insight">
+      <a class="primary-navigation__link" href="/about">About athenaInsight</a>
+      <ul class="sub-menu">
+        <li class="menu-about-the-research primary-navigation__list-item"><a href="/about/research" class="primary-navigation__link">About the Research</a></li>
+        <li class="menu-about-the-data primary-navigation__list-item"><a href="/about/data" class="primary-navigation__link">About the Data</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>';//$this->getCategoryLeftMenu();
     return $build;
   }
   
   public function getCategoryLeftMenu() {
   	global $base_path;
-	$terms = \Drupal\taxonomy\TermStorage::loadTree('category');
+  	$output = '';
+	/* $terms = \Drupal\taxonomy\TermStorage::loadTree('category');
   	echo "sadfsa";
   	echo "<pre>"; print_r($terms); exit;
   	$output = '<nav class="primary-navigation" role="navigation">
@@ -67,6 +90,7 @@ class CategoryLeftMenu extends BlockBase {
         <strong>' . t( "Stay in the know" ) . '</strong><br> ' . t( "Sign up for weekly updates" ) . '
       </p> ' . render ( $sign_up_weekly_form ) . '</div>';
   	$output .= _ins_blocks_retrieve_followup_links ();
+  	*/
   	return $output;
   }
 }

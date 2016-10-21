@@ -19,8 +19,7 @@ class InnerPageSidebarSignupBlock extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['inner_page_sidebar_signup_block']['#markup'] = 'Implement InnerPageSidebarSignupBlock.';
-
-    return $build;
+    $form = \Drupal::formBuilder()->getForm('Drupal\insight_blocks\Form\SiderbarSignupForm');
+    return $form;
   }
 }

@@ -19,9 +19,7 @@ class HomepageFooterStay extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['homepage_footer_stay']['#markup'] = 'Implement HomepageFooterStay.';
-
-    return $build;
+    $form = \Drupal::formBuilder()->getForm('Drupal\insight_blocks\Form\StayInKnowForm');
+    return $form;
   }
-
 }

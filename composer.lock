@@ -847,16 +847,16 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.0.0-rc5",
+            "version": "1.0.0-rc6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/DrupalConsole.git",
-                "reference": "64f84cae5269e21363bffbb657866deae5fd6353"
+                "reference": "cda7f34a07a5b2d7cf51d0cf3b3f5ad628ac85f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/64f84cae5269e21363bffbb657866deae5fd6353",
-                "reference": "64f84cae5269e21363bffbb657866deae5fd6353",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/cda7f34a07a5b2d7cf51d0cf3b3f5ad628ac85f3",
+                "reference": "cda7f34a07a5b2d7cf51d0cf3b3f5ad628ac85f3",
                 "shasum": ""
             },
             "require": {
@@ -872,7 +872,7 @@
                 "stecman/symfony-console-completion": "^0.5.1",
                 "symfony/css-selector": "~2.8",
                 "symfony/debug": "~2.6|~2.8",
-                "symfony/dom-crawler": "~2.8",
+                "symfony/dom-crawler": "~2.7|~2.8",
                 "symfony/expression-language": "^2.8",
                 "symfony/http-foundation": "~2.8"
             },
@@ -922,20 +922,20 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-10-06 12:58:41"
+            "time": "2016-10-17 18:38:59"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.0.0-rc5",
+            "version": "1.0.0-rc6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "d66783ee3a4a8340c8bed55baf19195622b00131"
+                "reference": "105bf5845f17b336c9a62fbd3e576eaea0eb91d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/d66783ee3a4a8340c8bed55baf19195622b00131",
-                "reference": "d66783ee3a4a8340c8bed55baf19195622b00131",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/105bf5845f17b336c9a62fbd3e576eaea0eb91d5",
+                "reference": "105bf5845f17b336c9a62fbd3e576eaea0eb91d5",
                 "shasum": ""
             },
             "require": {
@@ -1001,20 +1001,20 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-10-06 12:22:57"
+            "time": "2016-10-17 16:55:41"
         },
         {
             "name": "drupal/console-en",
-            "version": "1.0.0-rc1",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "2cf5746d56aab2a2b16f09f1875be6456363055f"
+                "reference": "d95f7673ce0d3253efb7ce054a2bf13e6cf9c773"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/2cf5746d56aab2a2b16f09f1875be6456363055f",
-                "reference": "2cf5746d56aab2a2b16f09f1875be6456363055f",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/d95f7673ce0d3253efb7ce054a2bf13e6cf9c773",
+                "reference": "d95f7673ce0d3253efb7ce054a2bf13e6cf9c773",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -1055,7 +1055,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2016-09-23 07:54:23"
+            "time": "2016-10-17 16:30:14"
         },
         {
             "name": "easyrdf/easyrdf",
